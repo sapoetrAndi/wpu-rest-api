@@ -1,0 +1,16 @@
+[{
+        "key": "value"
+    },
+
+    {
+        "nama": "andi saputra",
+        "umur": 26,
+        "NIM": "2015140368",
+        "lulus": true,
+        "hobby": ["coding", "gaming"],
+        "pembimbing": {
+            "pembimbing1": "bpk maulana",
+            "pembimbing2": ""
+        }
+    }
+]

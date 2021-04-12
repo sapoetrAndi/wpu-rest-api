@@ -1,0 +1,54 @@
+Aplication Programming Interface (API)
+adalah sekumpulan fungsi, subroutine, protokol komunikasi, 
+atau tools untuk membuat perangkat lunak.
+
+web api/ web service
+	- SOAP (Simple Object Access Protocol)
+	- REST (REpresentational State Transfer)
+
+02# REST & HTTP
+
+- definisi REST API adalah gaya arsitektural perangkat lunak yang 
+di dalamnya mendefinisikan aturan-aturan untuk membuat web service. hasil disertasi PhD/s3 bapak Roy Fielding
+- HTTP 
+- URL Uniform resource locator
+- stateless dalah ketidak adaan sebuah state dalam suatu apikasi (kita tidak boleh menyimpan data di server)
+- restful api adalah menggunakan rest secara benar (dengan cara memakai semua HTTP method seperti GET,POST,PUT,DELETE)
+terminologi/istilah
+- API adalah penghubung
+- REST API adalah aturannya
+- ada request & response
+- data yang dikirim /diterima berupa JSON
+
+
+03# JSON
+- dibuat berdasarkan format objek pada javascript
+- Di gunakan juga untuk file konfigurasi meskipun tidak disarankan karena tidak suport sintaks komentar
+- BASON SINGKATAN DARI TIPE DATA PADA JSON
+BOOLEAN, ARRAY, STRING, OBJECT, NUMBER, NULL
+
+penggungaan JSON dalam php
+- json_encode() // untuk mengubah array/objek yang kita punya menjadi json
+- json_decode()// mngubah json menjadi array untuk dimanipulasi
+
+penggunaan json menggunakan javascript
+- JSON.stringify()
+- JSON.parse()
+
+mengakses json
+-ajax
+  - XMLHttpRequest
+  - JQuery
+
+04#bekerja dengan JSON
+
+* Same-origin Policy
+- kebujakan browser untuk mengakses dan menampilkan data/script/document dari tempat lain diluar domainnya
+- membuat kita tidak bisa mengakses data (.json) dari luar domain/website kita. maka dari itu kita harus melakukan konfigurasi CORS
+
+
+*CORS (Cross Origin Resource Sharing)
+- mekanisme yang membuat kita dapat mengakses sebuah resource (data, document, script) dari domain lain
+- Caranya adalah dengan membuat server memperbolehkan adanya akses data dari luar domain
+- dengan cara Modifikasi Access-Control-Allow-Origin
+- menggunakan file .htaccess atau dengan jsonp
